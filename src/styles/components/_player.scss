@@ -3,40 +3,66 @@
     height: 67px;
     background-color: green;
     background-image: url('/public/img/sprites/player-boy.png');
+    
+    
+    &[data-gender = "male"] {
+        background-image: url('/public/img/sprites/player-boy.png');
+    }
 
-    animation: walk .6s linear infinite backwards;
+    &[data-gender = "female"] {
+        background-image: url('/public/img/sprites/player-girl.png');
+    }
+    
+    &[data-walk = "true"] {
+        animation: walk .6s linear infinite backwards;
+    }
+    
+    &[data-walk = "false"] {
+        background-position-x: 0%;
+    }
+
+    &[data-direction = "down"] {
+        background-position-y: 0%;
+    }
+
+    &[data-direction = "left"] {
+        background-position-y: 33%;
+    }
+
+    &[data-direction = "right"] {
+        background-position-y: 66%;
+    }
+
+    &[data-direction = "up"] {
+        background-position-y: 99%;
+    }
 }
+
 
 @keyframes walk {
     0% {
         background-position-x: 0%;
     }
-    20% {
+    25% {
         background-position-x: 0%;
     }
-    20.000001% {
+    25.000001% {
         background-position-x: 33%;
     }
-    40% {
+    50% {
         background-position-x: 33%;
     }
-    40.000001% {
+    50.000001% {
         background-position-x: 66%;
     }
-    60% {
+    75% {
         background-position-x: 66%;
     }
-    60.000001% {
+    75.000001% {
         background-position-x: 99%;
-    }
-    80% {
-        background-position-x: 99%;
-    }
-    80.000001% {
-        background-position-x: 0%;
     }
     99.99999% {
-        background-position-x: 0%;
+        background-position-x: 99%;
     }
     100% {
         background-position-x: 0%;
