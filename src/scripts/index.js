@@ -2,4 +2,6 @@
 
 import '../styles/index.scss';
 
-console.log('Hello from the console sideeeeee...');
+import initCharacter from './characters/initCharacters';
+
+initCharacter();
