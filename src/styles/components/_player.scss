@@ -14,7 +14,7 @@
     }
     
     &[data-walk = "true"] {
-        animation: walk .6s linear infinite backwards;
+        animation: walk .6s infinite step-end;
     }
     
     &[data-walk = "false"] {
@@ -40,28 +40,16 @@
 
 
 @keyframes walk {
+
     0% {
-        background-position-x: 0%;
-    }
-    25% {
-        background-position-x: 0%;
-    }
-    25.000001% {
         background-position-x: 33%;
     }
-    50% {
-        background-position-x: 33%;
-    }
-    50.000001% {
+
+    33.3333% {
         background-position-x: 66%;
     }
-    75% {
-        background-position-x: 66%;
-    }
-    75.000001% {
-        background-position-x: 99%;
-    }
-    99.99999% {
+
+    66.66666% {
         background-position-x: 99%;
     }
     100% {
