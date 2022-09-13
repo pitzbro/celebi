@@ -3,5 +3,10 @@
 import '../styles/index.scss';
 
 import initCharacter from './characters/initCharacters';
+import initMove from './move/initMove';
+import { initMap, } from './maps/initMaps';
+
 
 initCharacter();
+initMove();
+initMap({imgSrc: 'beach'});
