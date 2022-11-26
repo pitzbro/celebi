@@ -12,7 +12,6 @@
     opacity: 0;
     max-height: 0;
 
-
     z-index: 2;
 
      + #action-btns {
@@ -43,6 +42,17 @@
 #action-btns {
     z-index: 2;
     grid-area: 3 / 2 / 4 / 3;
+    margin: 16px;
+    display: flex;
+    justify-content: flex-end;
 
-    .next {}
+    button {
+        background: #582623;
+        font-size: 20px;
+        font-family: 'Heebo', sans-serif;
+        font-weight: 500;
+        padding: 6px 16px;
+        border: 4px double #ffffff;
+        color: #fff;
+    }
 }

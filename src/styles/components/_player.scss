@@ -4,6 +4,15 @@
     transform: scale(1.9);
     background-image: url('/public/img/sprites/player-boy.png');
     z-index: 1;
+
+    &.heart::after {
+        content: "💖";
+        position: absolute;
+        top: -4px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 24px;
+    }
     
     
     &[data-gender = "male"] {
