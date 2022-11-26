@@ -1,8 +1,9 @@
 #player {
     width: 67px;
     height: 67px;
-    background-color: green;
+    // background-color: green;
     background-image: url('/public/img/sprites/player-boy.png');
+    z-index: 1;
     
     
     &[data-gender = "male"] {

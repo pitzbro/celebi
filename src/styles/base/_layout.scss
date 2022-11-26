@@ -1,0 +1,23 @@
+#game-view {
+    margin: auto;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 800px;
+    width: 800px;
+    overflow: hidden;
+
+    >* {
+        grid-area: 1 / 1 / -1 / -1;
+    }
+
+    #map-container {
+        display: grid;
+        >* {
+            grid-area: 1 / 1 / -1 / -1;
+        }
+     
+    }
+}

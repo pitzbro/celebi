@@ -1,3 +1,6 @@
+/* BASE */
+@import './base/_layout.scss/';
+
 /* Helpers */
 @import './helpers/normalize';
 @import './helpers/variables';
@@ -5,6 +8,8 @@
 /* Components*/
 @import './components/common';
 @import './components/player';
+
+@import './components/birthday';
 
 /* Views */
 @import './views/home';

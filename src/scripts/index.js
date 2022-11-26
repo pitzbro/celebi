@@ -8,5 +8,5 @@ import { initMap, } from './maps/initMaps';
 
 
 initCharacter();
-initMove();
 initMap({imgSrc: 'beach'});
+initMove();

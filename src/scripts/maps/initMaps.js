@@ -1,7 +1,8 @@
-import { gameView } from '../utils/consts';
+import { mapContainer, mapObj } from '../utils/consts';
+
+const mapWidth = 0;
 
 export function initMap({ pos, imgSrc }) {
-    console.log('hellloooo!!!!');
     const imgFileStr = `/public/img/maps/${imgSrc}.jpg`;
     const map = document.createElement('div');
     var mapImg = new Image;
@@ -11,6 +12,10 @@ export function initMap({ pos, imgSrc }) {
         map.style.width = `${this.width}px`;
         map.style.height = `${this.height}px`;
         map.style.backgroundImage = `url(${imgFileStr})`;
-        gameView.appendChild(map);
+        map.setAttribute('id', 'map');
+        mapContainer.style.transform = `translate(${mapObj.x}px, ${mapObj.y}px)`;
+        mapContainer.appendChild(map);
+
+        return map;
     };
 }
